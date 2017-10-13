@@ -3,9 +3,20 @@
 A mini e-commerce application built with Rail.
 (With apologies to the jogging)
 
+## Setup
+Clone the repository
+Run bundle install to install dependencies
+Run bin/rake db:reset to create, load and seed db
+Run bin/rails s -b 0.0.0.0 to start the server
+Open http://localhost:3000 on your browser
+
 ## ScreenShot
 !["Sreenshot"](https://github.com/lukesiem/jungle-rails/blob/master/screenshot.jpg?raw=true)
 
+## Order Testing
+Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
+
+More information in their docs: https://stripe.com/docs/testing#cards
 
 ## Dependencies
 
