@@ -25,7 +25,34 @@
         </dl>
       </div>
     </div>
+  </article>
+
+    <% if @user %>
+      <div class="review">
+        <%= form_for [@product, @review] do |f| %>
+         <div class="form-group col-sm-5">
+            <%= f.label :review%>
+            <%= f.text_area :description, class: "form-control"%><br />
+          Rating: <%= f.select :rating, [['5 stars: Amazing product', 5],['4 stars: I liked it', 4] , ['3 stars: Met my expectations', 3], ['2 stars: not worth money', 2], ['1 star: wouldn\'t buyt it', 1]] %><br />
+          <div class="butt">
+           <%= f.submit 'Submit Review', class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
+    <% end %>
+
+
+ <div class="row">
+  <% @product.reviews.reverse_each do |r| %>
+   <div class ="text"> User: <%= r.user.first_name %>  said <%= r.description %> and has rating <%= r.rating %>
+          <% if r.user == @user %>
+            <%= link_to "Delete", product_review_path(@product, r), method: :delete, data: {confirm: "Are you sure you want to delete this ?"} %>
+          <% end %>
+        </div>
+      <% end %>
+   </div>
 
   </article>
 
 </section>
+<%= link_to 'back', :root %>

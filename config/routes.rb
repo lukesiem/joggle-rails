@@ -5,12 +5,17 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
+  resources :products do
+    resources :reviews, only: [:create, :destroy]
+  end
+
   resource :cart, only: [:show] do
     put    :add_item
     delete :remove_item
   end
 
   resources :orders, only: [:create, :show]
+  
 
   namespace :admin do
     root to: 'dashboard#show'
