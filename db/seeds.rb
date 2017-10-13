@@ -36,101 +36,102 @@ puts "Re-creating Products ..."
 Product.destroy_all
 
 cat1.products.create!({
-  name:  'Men\'s Classy shirt',
+  name:  'Shorts',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel1.jpg'),
+  image: open_asset('Shorts.jpg'),
   quantity: 10,
   price: 64.99
 })
 
 cat1.products.create!({
-  name:  'Women\'s Zebra pants',
+  name:  'Summer Shirt',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel2.jpg'),
+  image: open_asset('SummerShirt.jpg'),
   quantity: 18,
   price: 124.99
 })
 
 cat1.products.create!({
-  name:  'Hipster Hat',
+  name:  'Frozen Pod',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel3.jpg'),
+  image: open_asset('pod.jpg'),
   quantity: 4,
   price: 34.49
 })
 
 cat1.products.create!({
-  name:  'Hipster Socks',
+  name:  'Charles in Chard',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel4.jpg'),
+  image: open_asset('charles.jpg'),
   quantity: 8,
   price: 25.00
 })
 
 cat1.products.create!({
-  name:  'Russian Spy Shoes',
+  name:  'Employment',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel5.jpg'),
+  image: open_asset('larger.jpg'),
   quantity: 8,
   price: 1_225.00
 })
 
 cat1.products.create!({
-  name:  'Human Feet Shoes',
+  name:  'Under Water Wifi',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('apparel6.jpg'),
+  image: open_asset('wifi.jpg'),
   quantity: 82,
   price: 224.50
 })
 
 
 cat2.products.create!({
-  name:  'Modern Skateboards',
+  name:  'Birthday Mix',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('electronics1.jpg'),
+  image: open_asset('30.png'),
   quantity: 40,
   price: 164.49
 })
 
 cat2.products.create!({
-  name:  'Hotdog Slicer',
+  name:  'Troemel Taco',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('electronics2.jpg'),
+  image: open_asset('taco.jpg'),
   quantity: 3,
   price: 26.00
 })
 
 cat2.products.create!({
-  name:  'World\'s Largest Smartwatch',
+  name:  'Taj Box',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('electronics3.jpg'),
+  image: open_asset('photo.jpg'),
   quantity: 32,
   price: 2_026.29
 })
 
 cat3.products.create!({
-  name:  'Optimal Sleeping Bed',
+  name:  'Art Historical Canon',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('furniture1.jpg'),
+  image: open_asset('canon.jpg'),
   quantity: 320,
   price: 3_052.00
 })
 
 cat3.products.create!({
-  name:  'Electric Chair',
+  name:  'Branding the Individual/Ubiquitous Authorship, Jack Fisher',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('furniture2.jpg'),
+  image: open_asset('brand.jpg'),
   quantity: 2,
   price: 987.65
 })
-
 cat3.products.create!({
-  name:  'Red Bookshelf',
+  name:  'Modigliani On Couch, Arron Graham',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('furniture3.jpg'),
+  image: open_asset('couch.jpg'),
   quantity: 0,
   price: 2_483.75
 })
+
+
 
 puts "creating Users"
 (20.times).each do 
