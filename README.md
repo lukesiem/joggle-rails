@@ -1,6 +1,6 @@
 # The Joggle
 
-A mini e-commerce application built with Rail.
+A mini e-commerce application built with Rail & PostgreSQL as database.
 (With apologies to the jogging)
 
 ## Setup
