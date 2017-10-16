@@ -38,7 +38,7 @@ Product.destroy_all
 cat1.products.create!({
   name:  'Shorts',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('Shorts.jpg'),
+  image: cl_image_tag("Shorts_ftrhle.jpg"),
   quantity: 10,
   price: 64.99
 })
@@ -46,7 +46,7 @@ cat1.products.create!({
 cat1.products.create!({
   name:  'Summer Shirt',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('SummerShirt.jpg'),
+  image: cl_image_tag("SummerShirt_t960mu.jpg"),
   quantity: 18,
   price: 124.99
 })
@@ -54,7 +54,7 @@ cat1.products.create!({
 cat1.products.create!({
   name:  'Frozen Pod',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('pod.jpg'),
+  image: cl_image_tag("pod_ksjeih.jpg"),
   quantity: 4,
   price: 34.49
 })
@@ -62,7 +62,7 @@ cat1.products.create!({
 cat1.products.create!({
   name:  'Charles in Chard',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('charles.jpg'),
+  image: cl_image_tag("charles_vutztn.jpg"),
   quantity: 8,
   price: 25.00
 })
@@ -70,7 +70,7 @@ cat1.products.create!({
 cat1.products.create!({
   name:  'Employment',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('larger.jpg'),
+  image: cl_image_tag("larger_g1osfu.jpg"),
   quantity: 8,
   price: 1_225.00
 })
@@ -78,7 +78,7 @@ cat1.products.create!({
 cat1.products.create!({
   name:  'Under Water Wifi',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('wifi.jpg'),
+  image: cl_image_tag("wifi_qi67l8.jpg"),
   quantity: 82,
   price: 224.50
 })
@@ -87,7 +87,7 @@ cat1.products.create!({
 cat2.products.create!({
   name:  'Birthday Mix',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('30.png'),
+  image: cl_image_tag("30_wsdsib.png"),
   quantity: 40,
   price: 164.49
 })
@@ -95,7 +95,7 @@ cat2.products.create!({
 cat2.products.create!({
   name:  'Troemel Taco',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('taco.jpg'),
+  image: cl_image_tag("taco_jpbsdo.jpg"),
   quantity: 3,
   price: 26.00
 })
@@ -103,7 +103,7 @@ cat2.products.create!({
 cat2.products.create!({
   name:  'Taj Box',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('photo.jpg'),
+  image: cl_image_tag("photo_qo8fpy.jpg"),
   quantity: 32,
   price: 2_026.29
 })
@@ -111,7 +111,7 @@ cat2.products.create!({
 cat3.products.create!({
   name:  'Art Historical Canon',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('canon.jpg'),
+  image: cl_image_tag("canon_rxwoqd.jpg"),
   quantity: 320,
   price: 3_052.00
 })
@@ -119,14 +119,14 @@ cat3.products.create!({
 cat3.products.create!({
   name:  'Branding the Individual/Ubiquitous Authorship, Jack Fisher',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('brand.jpg'),
+  image: cl_image_tag("brand_xnoeqc.jpg"),
   quantity: 2,
   price: 987.65
 })
 cat3.products.create!({
   name:  'Modigliani On Couch, Arron Graham',
   description: Faker::Hipster.paragraph(4),
-  image: open_asset('couch.jpg'),
+  image: cl_image_tag("couch_brp7av.jpg"),
   quantity: 0,
   price: 2_483.75
 })
