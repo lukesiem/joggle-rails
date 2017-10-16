@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hyrcxwhtw
+  api_key: '556811226945788'
+  api_secret: kbv5KPbfEnNMWDCN-OZvMmtV1Co
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hyrcxwhtw
+  api_key: '556811226945788'
+  api_secret: kbv5KPbfEnNMWDCN-OZvMmtV1Co
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hyrcxwhtw
+  api_key: '556811226945788'
+  api_secret: kbv5KPbfEnNMWDCN-OZvMmtV1Co
+  enhance_image_tag: true
+  static_image_support: false

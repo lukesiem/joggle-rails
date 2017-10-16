@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 puts "Seeding Data ..."
+include CloudinaryHelper
 
 # Helper functions
 def open_asset(file_name)
