@@ -85,7 +85,8 @@ RSpec.describe User, type: :model do
         password: 'save4life',  password_confirmation: 'save4life')
       @user.save
       expect(User.authenticate_with_credentials('SQuareJaw@heromail.com',@user.password)).to be_truthy
-      
+            
+
       end
    end
  end
